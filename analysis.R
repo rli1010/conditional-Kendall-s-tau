@@ -19,5 +19,4 @@ source(paste(path,"quantKendall.cens.R",sep=''))
 simda_cens=read.csv(paste(path,"simda_cens.csv",sep=''))
 c(mean(simda_cens$eta1),mean(simda_cens$eta2))
 
-quantKendall.cens(simda_cens, Surv(Y1,eta1)~Z1+Z2, Surv(Y2,eta2)~Z1+Z2, 
-                  upper=c(0.8,0.8),n.bt=200)
+quantKendall.cens(simda_cens, Surv(Y1,eta1)~Z1+Z2, Surv(Y2,eta2)~Z1+Z2, upper=c(0.8,0.8),n.bt=200)
