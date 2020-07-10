@@ -1,4 +1,4 @@
-
+##set path to local folder##
 path='H:\\R code share\\bivKendall\\'
 
 ##the .dll file is for 64-bit windows##
