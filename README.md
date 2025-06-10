@@ -5,7 +5,9 @@ Example codes to two example datasets:<br><br>
 
 
 ##the .dll file is for 64-bit windows##<br><br>
-path='H:\\R code share\\bivKendall\\'  #reset to local file folder where the files are saved<br>
+#reset path to local file folder where the files are saved<br><br>
+
+path='H:\\R code share\\bivKendall\\'  
 dyn.load(paste(path,"quantKendall.dll",sep=''))<br>
 library(quantreg)<br>
 
@@ -29,7 +31,6 @@ print(fit2)<br>
 
 
 
-Code developed by Xiangyu Liu, Jing Ning, and Ruosha Li.
-
+Code developed by Xiangyu Liu, Jing Ning, and Ruosha Li.<br>
 Liu, X, Ning, J, Cheng, Y, Huang, X, Li, R. A flexible and robust method for assessing conditional association and conditional concordance. Statistics in Medicine. 2019; 38: 3656– 3668.
 
