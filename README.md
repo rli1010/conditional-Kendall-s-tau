@@ -1,11 +1,11 @@
 # conditional-Kendall-s-tau
 R codes for calculating the conditional Kendall's tau with bivariate continuous outcomes that are uncensored or subject to censoring
 
-Example codes to two example datasets:<br>
+Example codes to two example datasets:<br><br>
 
 
-##the .dll file is for 64-bit windows##<br>
-path='H:\\R code share\\bivKendall\\'  #reset to local file folder where the quantKendall.dll file is saved<br>
+##the .dll file is for 64-bit windows##<br><br>
+path='H:\\R code share\\bivKendall\\'  #reset to local file folder where the files are saved<br>
 dyn.load(paste(path,"quantKendall.dll",sep=''))<br>
 library(quantreg)<br>
 
