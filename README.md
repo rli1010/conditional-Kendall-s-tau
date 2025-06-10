@@ -8,14 +8,13 @@ Example codes to two example datasets:
 path='H:\\R code share\\bivKendall\\'  #reset to local file folder<br>
 
 
-##the .dll file is for 64-bit windows##
+##the .dll file is for 64-bit windows##<br>
 dyn.load(paste(path,"quantKendall.dll",sep=''))<br>
-
 library(quantreg)<br>
 
 ##analysis for uncensored data##<br>
-
 ##conducts 200 bootstrap by default##<br>
+
 source(paste(path,"quantKendall.comp.R",sep=''))<br>
 simda_comp=read.csv(paste(path,"simda_comp.csv",sep=''))<br>
 
