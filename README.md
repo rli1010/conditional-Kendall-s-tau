@@ -6,14 +6,12 @@ Example codes to two example datasets:<br><br>
 
 ##the .dll file is for 64-bit windows##<br>
 #reset path to local file folder where the files are saved<br><br>
-
 path='H:\\R code share\\bivKendall\\'  
 dyn.load(paste(path,"quantKendall.dll",sep=''))<br>
 library(quantreg)<br>
 
 ##analysis for uncensored data##<br>
 ##conducts 200 bootstrap by default##<br>
-
 source(paste(path,"quantKendall.comp.R",sep=''))<br>
 simda_comp=read.csv(paste(path,"simda_comp.csv",sep=''))<br>
 fit1=quantKendall.comp(data=simda_comp,Y1 ~ Z1+Z2,Y2 ~ Z1+Z2)<br>
