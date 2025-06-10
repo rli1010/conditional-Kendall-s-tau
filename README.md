@@ -4,7 +4,9 @@ R codes for calculating the conditional Kendall's tau with bivariate continuous 
 Example codes to two example datasets:
 
 ###################################################################
+
 path='H:\\R code share\\bivKendall\\'  #reset to local file folder
+
 
 ##the .dll file is for 64-bit windows##
 dyn.load(paste(path,"quantKendall.dll",sep=''))
@@ -12,11 +14,12 @@ dyn.load(paste(path,"quantKendall.dll",sep=''))
 library(quantreg)
 
 ##analysis for uncensored data##
+
 ##conducts 200 bootstrap by default##
 source(paste(path,"quantKendall.comp.R",sep=''))
 simda_comp=read.csv(paste(path,"simda_comp.csv",sep=''))
 
-fit1=quantKendall.comp(data=simda_comp,Y1~Z1+Z2,Y2~Z1+Z2)
+fit1=quantKendall.comp(data=simda_comp,Y1 ~ Z1+Z2,Y2 ~ Z1+Z2)
 print(fit1)
 
 ###analysis for censored data###
