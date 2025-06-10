@@ -5,30 +5,30 @@ Example codes to two example datasets:
 
 ###################################################################
 
-path='H:\\R code share\\bivKendall\\'  #reset to local file folder
+path='H:\\R code share\\bivKendall\\'  #reset to local file folder<br>
 
 
 ##the .dll file is for 64-bit windows##
-dyn.load(paste(path,"quantKendall.dll",sep=''))
+dyn.load(paste(path,"quantKendall.dll",sep=''))<br>
 
-library(quantreg)
+library(quantreg)<br>
 
-##analysis for uncensored data##
+##analysis for uncensored data##<br>
 
-##conducts 200 bootstrap by default##
-source(paste(path,"quantKendall.comp.R",sep=''))
-simda_comp=read.csv(paste(path,"simda_comp.csv",sep=''))
+##conducts 200 bootstrap by default##<br>
+source(paste(path,"quantKendall.comp.R",sep=''))<br>
+simda_comp=read.csv(paste(path,"simda_comp.csv",sep=''))<br>
 
-fit1=quantKendall.comp(data=simda_comp,Y1 ~ Z1+Z2,Y2 ~ Z1+Z2)
+fit1=quantKendall.comp(data=simda_comp,Y1 ~ Z1+Z2,Y2 ~ Z1+Z2)<br>
 print(fit1)
 
-###analysis for censored data###
-source(paste(path,"quantKendall.cens.R",sep=''))
-simda_cens=read.csv(paste(path,"simda_cens.csv",sep=''))
-c(mean(simda_cens$eta1),mean(simda_cens$eta2))
+###analysis for censored data###<br>
+source(paste(path,"quantKendall.cens.R",sep=''))<br>
+simda_cens=read.csv(paste(path,"simda_cens.csv",sep=''))<br>
+c(mean(simda_cens$eta1),mean(simda_cens$eta2))<br>
 
-fit2=quantKendall.cens(simda_cens, Surv(Y1,eta1)~Z1+Z2, Surv(Y2,eta2)~Z1+Z2, upper=c(0.8,0.8),n.bt=200)
-print(fit2)
+fit2=quantKendall.cens(simda_cens, Surv(Y1,eta1)~Z1+Z2, Surv(Y2,eta2)~Z1+Z2, upper=c(0.8,0.8),n.bt=200)<br>
+print(fit2)<br>
 
 
 
