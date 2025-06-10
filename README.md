@@ -4,11 +4,8 @@ R codes for calculating the conditional Kendall's tau with bivariate continuous 
 Example codes to two example datasets:<br>
 
 
-
-path='H:\\R code share\\bivKendall\\'  #reset to local file folder where the .dll file is saved<br>
-
-
 ##the .dll file is for 64-bit windows##<br>
+path='H:\\R code share\\bivKendall\\'  #reset to local file folder where the .dll file is saved<br>
 dyn.load(paste(path,"quantKendall.dll",sep=''))<br>
 library(quantreg)<br>
 
