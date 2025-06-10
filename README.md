@@ -4,7 +4,7 @@ R codes for calculating the conditional Kendall's tau with bivariate continuous 
 Example codes to two example datasets:<br><br>
 
 
-##the .dll file is for 64-bit windows##<br><br>
+##the .dll file is for 64-bit windows##<br>
 #reset path to local file folder where the files are saved<br><br>
 
 path='H:\\R code share\\bivKendall\\'  
