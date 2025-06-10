@@ -16,11 +16,10 @@ library(quantreg)<br>
 
 source(paste(path,"quantKendall.comp.R",sep=''))<br>
 simda_comp=read.csv(paste(path,"simda_comp.csv",sep=''))<br>
-
 fit1=quantKendall.comp(data=simda_comp,Y1 ~ Z1+Z2,Y2 ~ Z1+Z2)<br>
-print(fit1)
+print(fit1)<br>
 
-###analysis for censored data###<br>
+###analysis for censored data###<br><br>
 source(paste(path,"quantKendall.cens.R",sep=''))<br>
 simda_cens=read.csv(paste(path,"simda_cens.csv",sep=''))<br>
 c(mean(simda_cens$eta1),mean(simda_cens$eta2))<br>
